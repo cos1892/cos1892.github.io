@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #222222;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.search {
+    width: 700px;
+    border-radius: 10px;
+    height: 30px;
+    margin: 10px auto;
+    background: #fff;
+    font-size: 0;
+    padding: 10px;
+}
+
+.search label {
+    display: inline-block;
+    width: 50px;
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+}
+
+#stringSearch {
+    display: inline-block;
+    width: 650px;
+    height: 100%;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+
+#wrapper {
+    width: 1430px;
+    height: 500px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#result {
+    position: relative;
+    transition: left 2s;
+}
+
+#result .item {
+    -webkit-user-select: none;
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 320px;
+    height: 500px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#result .item .title {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    background: rgba(5, 75, 5, .8);
+    text-align: center;
+    text-decoration: underline;
+    color: #fff;
+    padding: 10px;
+    width: 300px;
+}
+
+#result .item img {
+    width: 300px;
+}
+
+#result .item .information {
+    width: 250px;
+    margin: 0 auto;
+}
+
+#result .item .information div {
+    font-size: 0;
+    margin: 15px 0;
+}
+
+#result .item .information div i,  #result .item .information div span {
+    display: inline-block;
+    text-align: center;
+}
+
+#result .item .information div i {
+    width: 50px;
+    font-size: 24px;
+}
+
+#result .item .information div span {
+    width: 200px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#result .item .description {
+    font-style: italic;
+}
+
+#pages {
+    text-align: center;
+}
+
+#pages button {
+    background: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0);
+    font-weight: bold;
+}
+
+#pages button:hover {
+    color: rgba(255, 255, 255, 1);
+    background: #ff0000;
+}
