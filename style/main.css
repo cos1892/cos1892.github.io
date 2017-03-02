@@ -29,7 +29,7 @@ a {
 
 #container {
     width: 860px;
-    height: 560px;
+    min-height: 560px;
     margin: 0 auto;
     background: #2a1511;
     padding: 30px;
